@@ -36,3 +36,11 @@ Todo
 * Visual mode
 * `Ctrl`-based commands
 * Load custom `vimrc`
+
+License
+-------
+
+If anything comes of this, I'd like it to be free. As such, the use of the
+source code is available under the terms of the General Public License v3.
+Please no hatin' because of my choice of open source license. If you don't
+like it, go elsewhere. Thanks.
