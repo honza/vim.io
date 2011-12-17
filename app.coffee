@@ -30,9 +30,9 @@ io = require('socket.io').listen(app)
 
 io.sockets.on 'connection', (socket) ->
   console.log 'connected'
-  return
-  exec "mvim --servername vimserver #{__dirname}/file"
+  console.log __dirname
+  exec "gvim --servername vimserver #{__dirname}/file"
   socket.on 'key', (key) ->
-    exec "mvim --servername vimserver --remote-send '#{key}'", (er, stdout, stderr) ->
+    exec "gvim --servername vimserver --remote-send '#{key}'", (er, stdout, stderr) ->
       fs.readFile __dirname + '/mle', 'utf-8', (err, data) ->
         socket.emit 'update', data
