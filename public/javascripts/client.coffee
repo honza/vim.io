@@ -14,7 +14,7 @@
   start = ->
     editor = $ '#editor'
     input = $ '#input'
-    socket = io.connect 'http://localhost:8000'
+    socket = io.connect 'http://localhost:8080'
     do bind
 
   bind = ->
