@@ -37,6 +37,14 @@ Todo
 * `Ctrl`-based commands
 * Load custom `vimrc`
 
+Issues
+------
+
+The vim `clientserver` can only be used when an actual graphical instance of
+vim can be displayed. So, running the app on your laptop and having a Macvim
+window open in the background works --- but not on the server. I'm trying to
+find a workaround.
+
 License
 -------
 
